@@ -96,7 +96,7 @@ https://github-dev-finderr.netlify.app/
 
 ## 👩‍💻 Author
 
-**Sakshi Gupta**❤️
+**Sakshi Gupta**💛
 
 GitHub: https://github.com/saakshigupta-saa
 
