@@ -52,7 +52,7 @@ GitHub-Profile-Explorer/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/saakshigupta-saa/github-profile-explorer.git
+git clone https://github.com/saakshigupta-saa/github-profile-finder.git
 ```
 
 2. Open the project folder in VS Code.
@@ -96,7 +96,7 @@ https://github-dev-finderr.netlify.app/
 
 ## 👩‍💻 Author
 
-**Sakshi Gupta**
+**Sakshi Gupta**❤️
 
 GitHub: https://github.com/saakshigupta-saa
 
