@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GitHub Profile Finder</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-brands fa-github"></i>
+
+<h2>GitHub Profile Finder</h2>
+
+</div>
+
+<div class="nav-right">
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Search Any GitHub Developer</h1>
+
+<p>
+
+Explore GitHub profiles, repositories, statistics, and compare developers.
+
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="usernameInput"
+placeholder="Enter GitHub Username">
+
+<button id="searchBtn">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search
+
+</button>
+
+</div>
+
+</section>
+
+<!-- LOADER -->
+
+<section id="loader" class="hidden">
+
+<div class="spinner"></div>
+
+<p>Loading profile...</p>
+
+</section>
+
+<!-- ERROR -->
+
+<section id="error" class="hidden">
+
+<i class="fa-solid fa-circle-exclamation"></i>
+
+<h2>User Not Found</h2>
+
+<p>Please enter a valid GitHub username.</p>
+
+</section>
+
+<!-- PROFILE -->
+
+<section id="profileSection" class="profile hidden">
+
+<div class="profile-card">
+
+<div class="profile-left">
+
+<img id="avatar" src="" alt="Avatar">
+
+</div>
+
+<div class="profile-right">
+
+<div class="profile-top">
+
+<div>
+
+<h2 id="name">GitHub User</h2>
+
+<p id="username">@username</p>
+
+</div>
+
+<a
+id="profileLink"
+target="_blank">
+
+View Profile
+
+</a>
+
+</div>
+
+<p id="bio">
+
+Developer bio appears here...
+
+</p>
+
+<div class="details">
+
+<div>
+
+<i class="fa-solid fa-location-dot"></i>
+
+<span id="location">Location</span>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-building"></i>
+
+<span id="company">Company</span>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-calendar"></i>
+
+<span id="joined">Joined Date</span>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-link"></i>
+
+<a
+id="website"
+target="_blank">
+
+Portfolio
+
+</a>
+
+</div>
+
+</div>
+
+<div class="stats">
+
+<div>
+
+<h3 id="followers">0</h3>
+
+<span>Followers</span>
+
+</div>
+
+<div>
+
+<h3 id="following">0</h3>
+
+<span>Following</span>
+
+</div>
+
+<div>
+
+<h3 id="repos">0</h3>
+
+<span>Repositories</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REPOSITORIES -->
+
+<section id="repoSection" class="hidden">
+
+<h2>Latest Repositories</h2>
+
+<div id="repoContainer">
+
+</div>
+
+</section>
+
+<!-- STATISTICS -->
+
+<section id="statsSection" class="hidden">
+
+<h2>GitHub Statistics</h2>
+
+<div class="stat-grid">
+
+<div class="stat-card">
+
+<h3 id="publicRepos">0</h3>
+
+<p>Repositories</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="totalStars">0</h3>
+
+<p>Total Stars</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="followersCount">0</h3>
+
+<p>Followers</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="followingCount">0</h3>
+
+<p>Following</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BATTLE MODE -->
+
+<section class="battle">
+
+<h2>GitHub Battle Mode</h2>
+
+<div class="battle-search">
+
+<input
+type="text"
+id="userOne"
+placeholder="First Username">
+
+<input
+type="text"
+id="userTwo"
+placeholder="Second Username">
+
+<button id="battleBtn">
+
+Compare
+
+</button>
+
+</div>
+
+<div
+id="battleResult"
+class="battle-result hidden">
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+Built using HTML, CSS, JavaScript and GitHub REST API
+
+</p>
+<div class="footer-links">
+
+            <a href="https://github.com" target="_blank">
+
+                <i class="fa-brands fa-github"></i>
+
+                GitHub
+
+            </a>
+
+            <a href="https://docs.github.com/en/rest" target="_blank">
+
+                <i class="fa-solid fa-book"></i>
+
+                API Docs
+
+            </a>
+
+        </div>
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
